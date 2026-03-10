@@ -320,3 +320,4 @@ Command：
 最后讲一下关于Source Control：
 他在Antigravity的最左侧的一栏中（logo像Y）
 会出现两个选项第一个initializa repository和publish to GitHub
+我先说一下我们为什么要用source control 因为你的项目需要迭代好多次 比如说我们点击initializa repository之后便可以进行commit 每次提交之后都会有记录 我们可以随时查看我们上次的更改 而且每次更改的时候都会让你写一个COMMIT_EDITMSG 你在第一行写你为什么更改或者这次更改的目的是什么（写给自己或者别人看的 让别人更好的理解这个项目）然后修好之后点击√之后就可以提交了 （如果有GitHub仓库 连接Github MCP也可以 但是这个是要在docker运行的情况下运行）
