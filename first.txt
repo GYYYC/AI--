@@ -306,3 +306,17 @@ Agent Non-Workspace File Access（工作区外文件访问）
   - 当前工作区文件
   - ~/.antigravity/（含 Artifacts、Knowledge Items 等）
 - 开启后 Agent 可读写工作区以外的文件 谨慎使用，可能将本地敏感数据暴露给 Agent
+Command：
+再讲讲编码问题 Antigravity具备对一大段代码进行局部的修改 你可以选中你想修改的代码 然后ctrl+i 我们可以用自然语言进行指令 （Command 功能的定位不是问答，而是生成/修改代码）
+（如果是想询问关于这段代码或者这段文字的内容以及作用（有疑问）我们可以crtl+L 便局部可以和智能体进行对话 （可以多选））
+{
+使用流程
+1. 光标放在目标位置
+2. 按快捷键 → 弹出输入框
+3. 用自然语言输入需求
+4. AI 直接在当前位置生成内容
+5. 你审查后决定是否接受
+}
+最后讲一下关于Source Control：
+他在Antigravity的最左侧的一栏中（logo像Y）
+会出现两个选项第一个initializa repository和publish to GitHub
