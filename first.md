@@ -13,7 +13,7 @@
 
 ### 2. 注册 Google 账号
 
-有了梯子之后，我们要注册 Google 账号。目前最有效的方法就是在**手机版 Gmail** 里面注册，用国内手机号就可以（但手机要有梯子和 Gmail）。
+有了梯子之后，我们要注册 Google 账号。目前最有效的方法就是在**手机版 Gmail** 里面注册，用国内手机号就可以（但手机要具备有梯子和 Gmail）。
 
 ### 3. 推荐的 AI 工具
 
@@ -49,7 +49,7 @@
 
 > **声明**：我希望大家可以把 AI 真正地运用起来，而不是简单地把它当作高级百度。
 >
-> 记住：**AI 决定人类的下限，但上限由你来决定。** 所以 AI 并不能缩小人与人之间的差距，反而会扩大差距。
+> 记住：**AI 决定人类的下限，但上限由你来决定，所以 AI 并不能缩小人与人之间的差距，反而会扩大差距。**
 
 ---
 
@@ -218,7 +218,7 @@ https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/refs/heads/dev/doc
 
 不同 CLI 的 Skills 配置方式不同。以 **ui-ux-pro-max**（前端编写 Skill）为例：
 
-1. GitHub 仓库：<https://github.com/nextevelbuilder/ui-ux-pro-max-skill>
+1. GitHub 仓库：<https://github.com/nextlevelbuilder/ui-ux-pro-max-skill>
 2. 安装步骤：
    - 终端（Win+R → cmd）输入：`npm install -g uipro-cli`
    - `cd /path/to/your/project`（例如 `cd C:\Users\28997`）
@@ -523,3 +523,44 @@ Antigravity 中没有显式命令去调用 Skills（OpenCode、Copilot 可以用
 > ⚠️ 连接 GitHub MCP 需要 Docker 运行 + GitHub Token 权限足够。
 >
 > 💡 每次更新项目都建议 commit，这样以后找之前的版本都有记录。
+
+---
+
+## 八、总结与资源汇总
+
+### 工具速查对比
+
+| 特性 | Gemini 网页版 | OpenCode CLI | Copilot CLI | Antigravity |
+|------|:---:|:---:|:---:|:---:|
+| 操作本地文件 | ❌ | ✅ | ✅ | ✅ |
+| MCP 支持 | ❌ | ✅ | ✅ | ✅ |
+| Skills 支持 | ❌ | ✅ | ✅ | ✅ |
+| 多 Agent 并行 | ❌ | ✅(插件) | ✅ | ✅ |
+| 最适合 | 问答/研究 | 轻量编码 | 编码 | 全功能开发 |
+
+### 常用链接
+
+| 资源 | 链接 |
+|------|------|
+| Steam++ | https://steampp.net/ |
+| Google 学生认证 | https://one.google.com/ai-student?hl=en-US |
+| Google AI Studio | https://aistudio.google.com/ |
+| OpenCode | https://github.com/anomalyco/opencode |
+| Antigravity Tools | https://github.com/lbjlaq/Antigravity-Manager |
+| oh-my-opencode | https://github.com/code-yeongyu/oh-my-opencode |
+| Copilot CLI | https://github.com/features/copilot/cli |
+| NotebookLM | https://notebooklm.google.com |
+
+### 最后想说的
+
+工具会不断更新，但核心思路不变：
+- **善用 AI，但不依赖 AI** —— 你的判断力永远是最重要的
+- **多动手实践** —— 看十遍不如自己配一遍
+- **遇到问题先问 AI** —— 这本身就是最好的练习
+
+**既然大家能看到最后**
+我希望能聚集一群**真正愿意把 AI 用起来**的人，AI的学习是需要交流的 虽然我们有强大的模型 但是切忌不要闭门造车 对文件内容有疑问或者觉得哪些地方需要改进的或者对以后的AI发展和社会变化有自己的见解的都可以联系我 **我是来自河南工业大学计科的郭益辰 QQ：2899741359 微信：gh2899741359**
+
+> 本教程更新于 2026 年 3 月，模型版本和工具功能可能会有变化，请以官方文档为准。
+
+
