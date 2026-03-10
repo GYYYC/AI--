@@ -1,0 +1,308 @@
+ 我也希望国内的AI更厉害 这样我们也不用费这么大劲儿去使用国外的AI 当然现在国内的AI也有很不错的比如MinMax模型和GLM模型deepseek也可以的
+                                                                         准备工作
+一：首先梯子是必要的 GitHub或CSDN里面都有介绍 想进入GitHub但是进不去的可以下载steam++官方网址（https://steampp.net/）
+二：有了梯子之后，我们要注册我们的Google账号 目前最有效的方法就是在手机版Gmail里面注册账号用国内手机号就可以注册（但是手机要有梯子和Gmail）
+三：现在最稳定并且我们可以低成本进行享用的就是谷歌旗下的比如Gemini Antigravity还有opencode和GitHub copilot（后面两个都可以进行安装CLI 可直接操作本地文件 Antigravity也可以）
+四：现在讲讲怎么进行低成本操作 要保证自己的谷歌会员是pro版本 第一就是查看自己的谷歌账号是否有学生认证的资格 （https://one.google.com/ai-student?hl=en-US）如果没有 可以联系我进谷歌的家庭组 也可以在网上自己找家庭组 第二如果有钱就自己充值每月20🔪 当然我们也可以白嫖Google的ai studio（https://aistudio.google.com/）在这里可以用Google最新版的模型 额度应该挺多 应该支持我们日常使用
+五：准备GitHub账号 挂上梯子正常注册就行谷歌或者qq邮箱都可以 如果是大学生也可以进行学生认证 大家可以在b站上搜索GitHub学生认证教程 国内大学也可以进行认证（如果实在不行也可以来询问我）
+总结：ok我们来总结一下现在我们具有什么条件了 第一：科学上网环境 第二：谷歌pro账号 第三：学生认证过的GitHub账号
+                                                                         日常教学
+声明：我希望大家可以把ai真正的运用起来 而不是简单的把它当作高级百度 还有：记住AI决定人类的下限但是上限是由你来决定的 所以AI并不能缩小人与人之间的差距反之会扩大差距
+                                                                         Gemini篇：
+首先推荐大家下载Gemini的网页版插件Gemini Voyager（ https://voyager.nagi.fun/）插件功能在该网页都有介绍 很详细。接下来就说Gemini该怎么用 因Gemini有记忆模式 所以在平常用来提问一些简单的问题或者与之前在Gemini提问的主题相距较大时 我们可以打开临时对话进行简单的问答 然后再说一下gem 我们可以将他想象成豆包中的智能体 你可以对他进行角色设定（system instructions 这个在Google ai studio中也有）比方说你想学某一个技能 便可以在临时对话的时候让ai给你精通该技能并且能详细教学老师的system instructions（prompt）还有一个全局的prompt 可以在Gemini左下角的设置与帮助中找到个人使用场景 其中有个向Gemini提供指令 点击添加便可以进行system instruction （说一下我对system instruction的理解 我们平常为了让ai说话符合我们的预期通常会在编写问题的时候进行对ai回答的控制 但是每次这样说会比较麻烦 便引入了system instruction这个功能） 再说一下Gemini其他的功能 对话框中的➕ 能添加文件 能上传文字和视频 还有一个很有用的功能NotebookLM 什么情况下会使用到他呢 当你需要系统性的学习一项技能 你可以在（notebooklm.google.com）中搜索很多关于该技能的文献和网址 选中这些文献之后就提交给ai 现在的ai就变成只针对这几篇文献进行深度理解与解析 这样就会减少AI幻觉的产生（也就是说的假话少一些）并且在notebooklm的右侧会有studio的模块其中可以进行文章内容可视化 也就是能多角度的进行文章的理解 尤其适合老师教学或者需要做ppt的工作人员 然后网上也有许多关于notebooklm的用法。Gemini内置的工具包括Nano banana
+（可制作图片），canvas ，Deep Research， 制作视频，学习辅导。 在这些功能中我最常使用的是canvas 因为它可以将他写的代码直接可视化 比如写一个前端代码 当代码完成之后它可以直接展示该代码所表示的前端界面 之前挺火的粒子交互系统 也是用该模式进行实现的 若没有这个功能虽然它可以给你一整段html格式的代码 但是还是需要你手动进行保存然后新建文件改名html 然后再运行 较为麻烦 有了这个功能之后 我们便可以在该对话框中进行修改看结果 不满意再修改 直到满意为止 再把最终满意的代码版本保存即可（这里有个小技巧 如果在你和Gemini对话一段时间后 发现他不按照你给的提示走或者他听不懂你说的话 这时候拿着最后版本的代码 另起一个对话框 把代码和你的要求输入 重复以往 而且写代码的时候最好把对话框右下角的快速改成pro或者思考模式）再来说说Deep Research他就是一个深度挖掘的功能 你可以用它来挖掘数据和文献 可以理解为超级搜索百度 它不再仅仅是“问答机器人”，而是通过模拟导师的教学方法，引导你从“得到答案”转向“理解概念”适合学生和老师。当让Gemini也有CLI（可以操作本地文件 和使用agent skills和Mcp）对于CLI版本的使用 我们等一下通过其他的ai工具分享。
+                                                                         opencode篇：
+对于opencode 我们可以下载desktop版本或者cli版本（https://github.com/anomalyco/opencode 里面有opencode的介绍以及安装包 和cli的下载方法）我们主要是讲opencode cli 先简单来了解一下基础功能 tab键可以转换功能plan和build plan模式下不会更改你的文件 build模式下是可以修改创造本地文件 我日常使用是先用plan模式进行沟通几轮之后 再打开build模式进行创作 再说说models（模型选择） 现在opencode内置了minmax M2.5 和kimi2.5两个比较厉害的模型 如果需要用到顶级ai比如cloude和gemini和gpt这样的 就需要介绍一下另一个工具antigravity tools我们可以在GitHub中搜索 （https://github.com/lbjlaq/Antigravity-Manager 在该界面的右侧找到releases 里面有安装包 如果不知道自己电脑要下载哪一个我们可以截图所有安装包 然后给Gemini网页版 发过去询问） 在这里面我们可以登陆我们的pro资格的google账号 在上方导航中找到APi反代 找到自己的API密钥 打开自己的opencode.json如果没有自己创建一个在opencode的文件夹下 （一般是在C:\Users\用户\.config\opencode）然后将下面的配置直接粘贴到opencode.json中 保证opencode.json中只有这些内容
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "AntigravityTools": {oh
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Antigravity Local",
+      "options": {
+        "baseURL": "http://127.0.0.1:8045/v1",
+        "apiKey": "这个地方粘贴你的API密钥"
+      },
+      "models": {
+        "gemini-3-pro-high": { "name": "Gemini 3 pro High" },
+        "gemini-3.1-pro-high": { "name": "Gemini 3.1 Pro High" },
+        "gemini-3-flash": { "name": "Gemini 3 Flash" },
+        "claude-sonnet-4-6": { "name": "Claude 4.6 Sonnet" },
+        "claude-sonnet-4-6-thinking": { "name": "Claude 4.6 Sonnet (Thinking)" },
+        "claude-opus-4-6-thinking": { "name": "Claude 4.6 Opus (Thinking)" }
+      }
+    }
+  }
+}
+粘贴之后 ctrl+s保存 之后在antigravity tools的api反代页面中的最上方找到启动服务 点击之后应该就可以使用了 在opencode中选择模型是在输入框中输入/models 回车之后就会看到好多模型 如果你的opencode.json中的文件和上面的一样 就可以找到Antigravity Local这个供货商里面选择自己想要使用的模型 再来说一说opencode中的“/”的使用 我们刚刚讲到了/models选择模型 还有/new新建对话 /sessions选择历史对话 其他的也没啥 当然Ctrl+p可以选择自己需要的诉求。
+  既然说到了opencode 那就不得不说一下opencode的最牛逼的插件oh-my-opencode（https://github.com/code-yeongyu/oh-my-opencode）先简单的介绍一下这个插件 我们可以想象成一个ceo 你把你的要求说了之后 下面的员工开始讨论 由sisyphus进行问题拆解和分配给其他的ai助手 相当于把你的ai全部调用起来并行地去解决自己应该解决的问题 把每个ai的优势都发挥出来 试想一下如果没有安装该插件 一个model处理所有的问题 难免会有一些问题没有解决好 这个插件便是避免了这件事情的发生 下载：在opencode的对话框中输入Install and configure oh-my-opencode by following the instructions here:
+https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/refs/heads/dev/docs/guide/installation.md
+下载之后他会问你几个问题 比如他会问你有没有Anthropic（cloude）的会员 或者openai（gpt）等等你都选择否就行 不要忘了我们有antigravity tools的反代 下载之后我们会发现在opencode的文件夹下会出现oh-my-opencode.json的配置文件
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
+  "agents": {
+    "sisyphus": {
+      "model": "AntigravityTools/claude-sonnet-4-6",
+      "variant": "max"
+    },
+    "hephaestus": {
+      "model": "AntigravityTools/claude-sonnet-4-6",
+      "variant": "medium"
+    },
+    "oracle": {
+      "model": "AntigravityTools/claude-sonnet-4-6",
+      "variant": "high"
+    },
+    "librarian": {
+      "model": "AntigravityTools/gemini-3-flash"
+    },
+    "explore": {
+      "model": "AntigravityTools/claude-sonnet-4-6"
+    },
+    "prometheus": {
+      "model": "AntigravityTools/claude-sonnet-4-6",
+      "variant": "max"
+    },
+    "metis": {
+      "model": "AntigravityTools/claude-sonnet-4-6",
+      "variant": "max"
+    },
+    "momus": {
+      "model": "AntigravityTools/claude-sonnet-4-6",
+      "variant": "medium"
+    },
+    "atlas": {
+      "model": "AntigravityTools/gemini-3-flash"
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "AntigravityTools/gemini-3.1-pro-high"
+    },
+    "ultrabrain": {
+      "model": "AntigravityTools/claude-sonnet-4-6",
+      "variant": "xhigh"
+    },
+    "deep": {
+      "model": "AntigravityTools/claude-sonnet-4-6",
+      "variant": "medium"
+    },
+    "artistry": {
+      "model": "AntigravityTools/gemini-3.1-pro-high",
+      "variant": "high"
+    },
+    "quick": {
+      "model": "AntigravityTools/gemini-3-flash"
+    },
+    "unspecified-low": {
+      "model": "AntigravityTools/gemini-3-flash"
+    },
+    "unspecified-high": {
+      "model": "AntigravityTools/claude-sonnet-4-6"
+    },
+    "writing": {
+      "model": "AntigravityTools/gemini-3-flash"
+    }
+  }
+}
+然后Ctrl+s保存即可 既然说到CLI那就不得不说一下MCP和Skills 先来说说skills对于不同的li有ncode这两个关于opencode的文件夹拿现在比较火的skills:些skills的配置并不一样比如opencode中的在我们的文件夹中应该会有.config/opencode和.opeui-ux -pro-max这是一个关于前端编写的skills 我们通过GitHub进入(https://github.com/nextevelbuilder/ui-ux-pro-max-skill)在README.md中我们可以看到CLI的安装方法 首先在终端 (wn+R输入cmd 回车)输入npm install-g uipro-cli 回车然后cd /path/to/your/project 回车(打开我们cli所在的文件)然后根据我们cli类型进行安装比如我skills文件夹 对于skills的安装如果实在没看懂的话 可以问我们]现在是opencode那我们就输入uipro init --ai opencode然后我们应该就能在.opencode中找到s综上所述你需要在不同的cli的配置文件中创建skills文件夹 然后该文件夹中必须需要有SKILL.md这羊才算是成功下载了该技能(C:\Users\28997.opencode的Gemini啊(主要的坑点应该是cd /path/to/your/project 比如我的就是cd C:\Users\28997)\skills\ui-ux-pro-max 可以对照该文件地址skills这个文件夹就是为了储存你所有的技能比如这个i-ux-pro-max这个文件夹中又有SKILL.md可以想象成技能介绍以及技能如何施法这是给AI看的)当然我们也可以自己编写skills具体操作我们可以询问Gemini或者我们可以直接将我们的诉求给Gemini说 然后让Gemini给你生成对应的skill
+再来说说我对 Skills 的理解。我认为它本质上是从 Prompt 演变而来的：
+
+初级阶段： 我们需要写大量标准且准确的长 Prompt，效率极低。
+
+中级阶段： 出现了系统提示词（System Prompt），像是一个预设的“人设面具”，但它过于死板，缺乏灵活性。
+
+高级阶段： 也就是现在的 Skills。
+
+很多人会担心：如果我给 Agent 装了 50 个 Skills，它岂不是要一次性读完？那 Token 消耗岂不是要爆炸？AI 的注意力会不会发散到“既想干这，又想干那”？
+
+我的回答是：No. 这种情况其实是“系统提示词”时代的弊端。Skills 引入了一个极其核心的机制——渐进式披露（Progressive Disclosure）。说人话就是：按需加载，用多少拿多少。 只有当 AI 判断当前任务需要某项技能时，相关的指令才会进入上下文。这既保住了 Token，也保住了 AI 的专注力。
+至于 MCP (Model Context Protocol)，你可以把它想象成 AI 界的 “USB 接口标准”。
+在 MCP 出现之前，如果你想让 AI 连接到你的 GitHub、Google Drive 或本地数据库，每个软件都需要编写一套专属的“翻译代码”；有了 MCP，只要插件符合这个标准，AI 就可以直接“盲插”并无缝调用这些外部数据。
+看到这你会觉得 MCP 和 Skills 很像。确实，如果说 Skills 是赋予 AI 的“认知补丁”（教它怎么想），那么 MCP 就是 AI 的“物理接口”（让它能碰到数据）。它们一个优化了大脑的效率，一个打通了四肢的连接，共同把 AI 从一个“聊天框”变成了一个真正的“行动派”。
+我们说完skills的配置之后再说一下mcp的配置
+方法一：
+就拿opencode举例你可以直接在终端中输入opencode mcp add这个交互式命令
+(就拿GitHub MCP举例你需要先在你的GitHub的settings的最下面找到Developer settings创建你的Personal access tokens (选择第一个即可)每一个mcp都需要tokens(令牌))
+这个命令会以交互式的方式引导你添加MCP服务器。你在终端里运行它之后，它会问你几个问题:
+1.MCP类型:选local(本地命令)还是remote(远程URL)
+2.名称:给这个MCP起个名字(比如github)
+3.命令:输入启动命令 (如npx -y@modelcontextprotocol/server-github)
+4.环境变量:输入token等密钥
+方法二(推荐)：
+但是我建议大家还是直接打开opencode.json(上文提到过)手动配置你把你opencodejson中勺文件交给Al让他帮你配置你所需要的MCP这样格式就不会出错 出错之后还能让ai继续帮你修改 直到配置成功为止（判断是否配置成功我么可以打开opencode 在对话框输入/mcp 回车之后看有没有新添加的mcp 或者我们可以在终端输入opencode mcp ls
+其他的ai都千篇一律了 再插一句opencode里面也可以创造像Gemini中gem一样的agent 可以在终端输入opencode agent create 或者你把你对agent的定义以及需求和opencode.json文件内容都交给ai 让他帮你进行配置 然后Tab键可以进行agent的选择。关于opencode的简单介绍就到这了。
+                                                                                                                       GitHub copilot(副驾驶)篇：
+关于GitHub copilot的使用 我建议大家都已经完成GitHub的学生认证了 还没有的可以在b站上搜索教程 对于这个使用分为在GitHub中使用 和CLI版本（https://github.com/features/copilot/cli 这个可以选择对应的安装方法）（https://docs.github.com/en/copilot/how-tos/copilot-cli/cli-best-practices 这个里面是关于copilot的完整介绍 ）我简短的说一下
+对于该MCP的配置：
+  方法一（推荐）：在 Copilot CLI 中使用命令
+  启动 copilot 后，输入：
+   /mcp add
+  然后用 Tab 在字段间切换填写 MCP 服务器信息，按 Ctrl+S 保存。保存后 mcp-config.json 会自动生成。
+方法二：手动创建配置文件（mcp-config.json）
+  直接创建 C:\Users\28997\.copilot\mcp-config.json，格式参考：
+   {
+     "mcpServers": {
+       "my-server": {
+         "command": "npx",
+         "args": ["-y", "@some/mcp-server"],
+         "env": {
+           "API_KEY": "your-key"
+         }
+       }
+     }
+   }
+ 创建 Skill 的步骤
+
+  1. 创建目录结构
+
+   - 个人 Skill（跨项目通用）：~/.copilot/skills/<skill-名称>/
+   - 项目 Skill（仅当前仓库）：.github/skills/<skill-名称>/（这个不用管 搞清楚会用个人skill就行了）
+
+  2. 在目录中创建 SKILL.md 文件（文件名必须是 SKILL.md）（如果你想自己创建skill）（其实你可以交给ai帮你生成skill的内容的 你只需要简单的crtl+c crtl+v）
+
+  格式如下：
+
+   ---
+   name: my-skill-name
+   description: 描述这个 skill 做什么，以及 Copilot 什么时候应该使用它。
+   ---
+
+   ## 指南
+
+   这里写给 Copilot 的具体指令、示例和规则...
+
+  3. 可选：在同一目录下添加脚本或资源文件，并在 SKILL.md 中说明如何使用它们。
+
+  常用管理命令
+
+  ┌───────────────────────────┬──────────────────────────┐
+  │ 命令                      │ 作用                     │
+  ├───────────────────────────┼──────────────────────────┤
+  │ /skills list              │ 列出所有可用 skills      │
+  ├───────────────────────────┼──────────────────────────┤
+  │ /skills                   │ 开启/关闭特定 skill      │
+  ├───────────────────────────┼──────────────────────────┤
+  │ /skills info              │ 查看 skill 详情和路径    │
+  ├───────────────────────────┼──────────────────────────┤
+  │ /skills reload            │ 重新加载（无需重启 CLI） │
+  ├───────────────────────────┼──────────────────────────┤
+  │ /skills remove <目录名>   │ 删除 skill               │
+  └───────────────────────────┴──────────────────────────┘
+
+  使用 Skill：
+  在提示词中用 /skill名称 来明确指定（显式）：
+  或者直接描述任务，Copilot 会根据 description 自动判断是否使用对应 skill。
+
+获取帮助：
+copilot -h                  # 命令行帮助
+copilot help TOPIC          # 主题帮助（config/commands/permissions 等）
+/help                       # CLI 内帮助
+/usage                      # 查看使用统计
+/feedback                   # 提交反馈 / 报 Bug
+
+推荐工作流：
+探索 → /plan → 审查计划 → 实现 → 验证测试 → 提交（善用 /plan 规划复杂任务、/delegate 异步委托、/fleet 并行加速，能显著提升开发效率。 或者通过shift+tab进行切换）
+tips：因为cli可以读取本地文件 所以你可以直接给文件地址他就会自己找到并对指定文件进行操作
+copilot里有内置的models我们可以通过/model 选择我们想要的模型 并且对于token的消耗copilot有个比较厉害的点 就是他的token消耗是看回答问题的次数 不论他为了回答这个问题消耗了多少token 他只给你按次数。
+copilot的简单介绍到这也就完成了。
+                                                                                                                Antigravity篇：
+作为一个ide工具 自然有很多功能需要了解的（详细的documentation可以访问https://antigravity.google/docs/get-started 进行逐字分析 有不明白的就截图发给ai进行讨论）
+我先简单的介绍一下这个ide工具：
+ 先来聊聊我们前面说的skills Antigravity中没有什么去显式命令去调用skills（比如前面opencode copilot都可以使用“/skill”去调用对应的skills）但是只要你在C:\Users\28997\.gemini\antigravity这个文件夹下有skills文件夹里面有规范的skill Antigravity就可以通过渐进式披露使用skill（因为每个skill下都有.md文件 文件里的description就是说明该skill的功能）当然也可以直接把你的skill名字点出来 比如我们之前说的ui-ux-pro-max我们就可以说 使用ui-ux-pro-max来巴拉巴拉 来“显式”调用该skill
+上面的skill是全局的 简单来说就是你在C:\Users\28997\.gemini\antigravity中配置成功之后 你在这个ide每打开一个新的对话/项目都可以调用这个skill
+既然有全局skill当然也有只针对一个项目的skill：我们在使用ide工作时 肯定要打开一个项目文件夹吧 我们可以在该文件夹中新建.agent/skills/在这个文件加中加入我们的skill 那么这个就只针对该项目起作用
+
+然后说MCP：
+如何连接
+内置 MCP Store（推荐）：
+1. 点击编辑器侧边栏顶部的 ... 下拉菜单
+2. 打开 MCP Servers 面板
+3. 浏览并点击 Install 安装所需服务
+4. 按提示完成账号授权
+（关于GitHub的MCP有一个前提是 我们要下载docker 必须在docker运行的前提下才能连接GitHub MCP）
+连接自定义 MCP 服务器（感觉没必要 但还是要说的）：
+1. 同样通过 ... 下拉 → Manage MCP Servers
+2. 点击 View raw config
+3. 直接编辑 mcp_config.json 添加自定义配置
+(没找到 可以在C:\Users\28997\.gemini\antigravity下创建mcp_config.json（如果没有的话）在里面进行MCP的配置 还是那句话 不会配置就去问问ai）
+说完这两个常客之后 然后讲讲ide特有的 Antigravity Agent Manager 的工作区（Workspace）功能（这个应该是Antigravity特有的）
+Workspace 工作区
+是什么
+Agent Manager 支持同时管理多个工作区，每个工作区对应一个文件夹。
+如何打开新工作区
+- 点击左侧边栏中的按钮
+- 选择一个起始文件夹作为工作区根目录
+如何切换工作区
+- 通过左侧边栏在不同工作区的对话之间随意切换（最上面偏右侧有open Agent Manager）
+核心概念：工作区 = 文件夹，一个工作区可以有多个对话，多个工作区可以同时运行、自由切换。 简单来说我们可以对同一个项目文件开两个窗口同时处理 （对于这个功能大家可以看B站 是很有用的功能）
+
+Rules（规则）是手动定义的约束条件，引导 Agent 遵循特定行为、风格和技术栈偏好。本质上是一个 Markdown 文件，字符限制 12,000 字符。
+存放位置
+类型	路径
+全局	~/.gemini/GEMINI.md
+工作区	.agent/rules/（工作区或 git 根目录）
+如何创建
+... 下拉 → Customizations → Rules → + Global 或 + Workspace
+激活方式（4种）
+方式	说明
+Manual	在输入框中 @提及 手动激活（推荐）
+Always On	永远生效（推荐）
+Model Decision	AI 根据自然语言描述自行判断是否应用
+Glob	匹配文件模式时自动应用（如 *.js、src/**/*.ts）
+Workflows（工作流）是定义一系列步骤，引导 Agent 完成重复性任务（如部署服务、处理 PR 评论）。也是 Markdown 文件，字符限制 12,000 字符，包含标题、描述和步骤。
+存放位置
+与 Rules 相同，分全局和工作区两级。
+如何创建
+... 下拉 → Customizations → Workflows → + Global 或 + Workspace
+如何执行
+在 Agent 输入框中使用斜杠命令：
+/workflow-name
+高级特性
+- Workflow 嵌套调用：一个 Workflow 内可以调用其他 Workflow
+    /workflow-1 → 调用 /workflow-2 → 调用 /workflow-3
+  - AI 自动生成 Workflow：手动操作完一系列步骤后，直接让 Agent 根据对话历史生成 Workflow
+对于这两个rules和workflows我希望大家可以和ai商量着去写 只要你的prompt足够清晰（一开始不够清晰也可以 和ai对话几轮 .md迭代几轮之后也是可以的）ai给你的效率提升是很大的 还有一点不要和ai比脑子 你有的只有你的判断力
+Agent 模式与设置总结
+一、对话级别模式（每次新对话可选）
+Planning	深度研究、复杂任务、协作工作
+Fast	简单任务（改变量名、跑几条命令等）
+二、全局设置（Settings → Agent 标签页）
+1. Artifact Review Policy（产物审查策略）
+Request Review	Agent 规划完成后停下来等你审查，你可以添加评论修改方案
+Always Proceed	Agent 规划完直接继续执行，无需手动审查
+> 不需要手动审查计划 → 选 Always Proceed
+> 想在 AI 动手前检查方案 → 选 Request Review
+---
+Terminal Command Auto Execution（终端命令自动执行）
+选项
+Request Review
+Always Proceed
+- Allow List 和 Deny List 均可在设置中自定义配置
+举例：
+- 设置为 `Request Review` + Allow List 加入 `git status`
+  → 其他命令都要审查，但 `git status` 直接执行
+- 设置为 `Always Proceed` + Deny List 加入 `rm -rf`
+  → 其他命令都自动执行，但 `rm -rf` 需要你手动审查确认
+（我觉得没什么用 主要是看看你是拿来干什么了 你如果想24小时让他工作 你自己还不想管 你就Always Proceed）
+- Unix Shell → 按空格分词，匹配命令的前缀
+- PowerShell → 匹配命令 token 的任意连续子序列
+{Unix Shell — 前缀匹配
+按空格把命令拆成 token，你配置的内容必须是命令开头的部分。
+配置：git
+匹配：git commit、git push、git status  ✅
+不匹配：npm run git  ❌（git 不在开头）
+配置：git push
+匹配：git push origin main  ✅
+不匹配：git commit  ❌（开头不是 git push）
+---
+PowerShell — 任意连续子序列匹配
+token 可以匹配命令的任意位置，不必在开头。
+配置：push origin
+匹配：git push origin main  ✅（中间包含 push origin）
+匹配：git push origin  ✅
+不匹配：git origin push  ❌（push 和 origin 不连续）}
+Agent Non-Workspace File Access（工作区外文件访问）
+- 默认情况下 Agent 只能访问：
+  - 当前工作区文件
+  - ~/.antigravity/（含 Artifacts、Knowledge Items 等）
+- 开启后 Agent 可读写工作区以外的文件 谨慎使用，可能将本地敏感数据暴露给 Agent
