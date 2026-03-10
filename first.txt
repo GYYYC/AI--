@@ -104,7 +104,7 @@ https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/refs/heads/dev/doc
     }
   }
 }
-然后Ctrl+s保存即可 既然说到CLI那就不得不说一下MCP和Skills 先来说说skills对于不同的li有ncode这两个关于opencode的文件夹拿现在比较火的skills:些skills的配置并不一样比如opencode中的在我们的文件夹中应该会有.config/opencode和.opeui-ux -pro-max这是一个关于前端编写的skills 我们通过GitHub进入(https://github.com/nextevelbuilder/ui-ux-pro-max-skill)在README.md中我们可以看到CLI的安装方法 首先在终端 (wn+R输入cmd 回车)输入npm install-g uipro-cli 回车然后cd /path/to/your/project 回车(打开我们cli所在的文件)然后根据我们cli类型进行安装比如我skills文件夹 对于skills的安装如果实在没看懂的话 可以问我们]现在是opencode那我们就输入uipro init --ai opencode然后我们应该就能在.opencode中找到s综上所述你需要在不同的cli的配置文件中创建skills文件夹 然后该文件夹中必须需要有SKILL.md这羊才算是成功下载了该技能(C:\Users\28997.opencode的Gemini啊(主要的坑点应该是cd /path/to/your/project 比如我的就是cd C:\Users\28997)\skills\ui-ux-pro-max 可以对照该文件地址skills这个文件夹就是为了储存你所有的技能比如这个i-ux-pro-max这个文件夹中又有SKILL.md可以想象成技能介绍以及技能如何施法这是给AI看的)当然我们也可以自己编写skills具体操作我们可以询问Gemini或者我们可以直接将我们的诉求给Gemini说 然后让Gemini给你生成对应的skill
+然后Ctrl+s保存即可 既然说到CLI那就不得不说一下MCP和Skills 先来说说skills对于不同的cli有ncode这两个关于opencode的文件夹拿现在比较火的skills:些skills的配置并不一样比如opencode中的在我们的文件夹中应该会有.config/opencode和.opeui-ux -pro-max这是一个关于前端编写的skills 我们通过GitHub进入(https://github.com/nextevelbuilder/ui-ux-pro-max-skill)在README.md中我们可以看到CLI的安装方法 首先在终端 (wn+R输入cmd 回车)输入npm install-g uipro-cli 回车然后cd /path/to/your/project 回车(打开我们cli所在的文件)然后根据我们cli类型进行安装比如我skills文件夹 对于skills的安装如果实在没看懂的话 可以问我们]现在是opencode那我们就输入uipro init --ai opencode然后我们应该就能在.opencode中找到s综上所述你需要在不同的cli的配置文件中创建skills文件夹 然后该文件夹中必须需要有SKILL.md这羊才算是成功下载了该技能(C:\Users\28997.opencode的Gemini啊(主要的坑点应该是cd /path/to/your/project 比如我的就是cd C:\Users\28997)\skills\ui-ux-pro-max 可以对照该文件地址skills这个文件夹就是为了储存你所有的技能比如这个i-ux-pro-max这个文件夹中又有SKILL.md可以想象成技能介绍以及技能如何施法这是给AI看的)当然我们也可以自己编写skills具体操作我们可以询问Gemini或者我们可以直接将我们的诉求给Gemini说 然后让Gemini给你生成对应的skill
 再来说说我对 Skills 的理解。我认为它本质上是从 Prompt 演变而来的：
 
 初级阶段： 我们需要写大量标准且准确的长 Prompt，效率极低。
@@ -122,7 +122,7 @@ https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/refs/heads/dev/doc
 我们说完skills的配置之后再说一下mcp的配置
 方法一：
 就拿opencode举例你可以直接在终端中输入opencode mcp add这个交互式命令
-(就拿GitHub MCP举例你需要先在你的GitHub的settings的最下面找到Developer settings创建你的Personal access tokens (选择第一个即可)每一个mcp都需要tokens(令牌))
+(就拿GitHub MCP举例你需要先在你的GitHub的settings的最下面找到Developer settings创建你的Personal access tokens (选择第二个即可 并把第一个有关repo的全选 这是有关给其他ai的权限)每一个mcp都需要tokens(令牌))
 这个命令会以交互式的方式引导你添加MCP服务器。你在终端里运行它之后，它会问你几个问题:
 1.MCP类型:选local(本地命令)还是remote(远程URL)
 2.名称:给这个MCP起个名字(比如github)
@@ -320,5 +320,6 @@ Command：
 最后讲一下关于Source Control：
 他在Antigravity的最左侧的一栏中（logo像Y）
 会出现两个选项第一个initializa repository和publish to GitHub
-我先说一下我们为什么要用source control 因为你的项目需要迭代好多次 比如说我们点击initializa repository之后便可以进行commit 每次提交之后都会有记录 我们可以随时查看我们上次的更改 而且每次更改的时候都会让你写一个COMMIT_EDITMSG 你在第一行写你为什么更改或者这次更改的目的是什么（写给自己或者别人看的 让别人更好的理解这个项目）然后修好之后点击√之后就可以提交了 （如果有GitHub仓库 连接Github MCP也可以 但是这个是要在docker运行的情况下运行）
-docker
+我先说一下我们为什么要用source control 因为你的项目需要迭代好多次 比如说我们点击initializa repository之后便可以进行commit 每次提交之后都会有记录 我们可以随时查看我们上次的更改 而且每次更改的时候都会让你写一个COMMIT_EDITMSG 你在第一行写你为什么更改或者这次更改的目的是什么（写给自己或者别人看的 让别人更好的理解这个项目）然后修好之后点击√之后就可以提交了 
+（如果有GitHub仓库 连接Github MCP也可以 但是这个是要在docker运行的情况下运行）（注意你给Antigravity绑定的GitHub的token权限必须要够 我上面有介绍的）
+（你每次更新你的项目的最好都commit一下 这样以后找之前的版本都有记录的）
